@@ -40,10 +40,10 @@ export const CategoryEstimateChart = () => {
         layout="vertical"
         data={chartData}
         margin={{
-          top: 60,
+          top: 10,
           right: 30,
           left: 20,
-          bottom: 5,
+          bottom: 20,
         }}
       >
         <CartesianGrid horizontal={false} />
@@ -61,7 +61,7 @@ export const CategoryEstimateChart = () => {
           width={150}
         />
         <ReferenceLine x={0} stroke="black" />
-        <Bar dataKey="value" name="Giá trị" barSize={20}>
+        <Bar dataKey="value" name="Giá trị" barSize={60}>
           <LabelList
             dataKey="value"
             position="right"

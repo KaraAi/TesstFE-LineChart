@@ -58,7 +58,7 @@ export default function ChartPage() {
             />
             <Sheet
               className={`size-8 text-blue-950 ${
-                selectedView === "sheet" ? "text-blue-700" : ""
+                selectedView === "sheet" ? "text-orange-700" : ""
               }`}
               onClick={() => setSelectedView("sheet")}
             />

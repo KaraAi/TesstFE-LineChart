@@ -9,6 +9,10 @@
     <title>React Typescript Webpack</title>
   </head>
   <body>
-    <div>root</div>
+    ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <ChartPage />
+  </React.StrictMode>
+);
   </body>
 </html>

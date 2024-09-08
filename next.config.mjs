@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  basePath: "/TestFE-LineChart",
+  output: "export",
+  reactStrictMode: true,
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  generateBuildId: async () => {
+    return process.env.GIT_HASH;
+  },
+};
 
-export default nextConfig;
+module.exports = nextConfig;
